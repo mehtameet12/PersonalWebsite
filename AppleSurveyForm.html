@@ -1,0 +1,94 @@
+<html>
+	<link rel="stylesheet" href="./surveryStyle.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500">
+<head>
+	<title> Apple Survey Form </title>
+	<div class="title_format">
+		<div class="image">
+			<a id ="Apple_logo_black" href="https://www.apple.com/ca/" target="_blank" rel="noopener noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="werfewf" style="width:100px;height:100px;"></a>
+		</div>
+		<div class="text">
+			<h1 id = "title">Apple Survey Form</h1>
+		</div>
+	  </div>
+	<head>
+	
+	
+	<div class="container">
+	<body>
+		
+
+		<form action="index.php" name="my form" method="POST" id = "survey-form">
+			<div class="headers"><h3>Personal Information</h3></div>
+			
+			<div class="labels">
+				<label id="firstname-label">First Name :</label> 
+			   </div>
+			   <div class="rightTab">
+				<input id="firstname" type="text" placeholder="Enter Your First Name" required>
+			   </div>
+			   <div class="labels">
+			   	<label id="lastname-label">Last Name :</label> 
+			   </div>
+			   <div class="rightTab">
+				<input id="lastname" type="text" placeholder="Enter Your Last Name" required>
+			   </div>
+			   <div class="labels">
+				 <label id="email-label" >Email :</label>
+			   </div>
+			   <div class="rightTab">
+				<input id="email" type="email" placeholder="Enter Your Email ID" required> 
+			   </div>
+
+			<div class="labels">Please select the appropriate gender</div>
+			<div class="rightTab"> 
+				<input type="radio" name = "sex" value="male ">Male<br>
+				<input type="radio" name = "sex" value="female ">Female<br>
+				<input type="radio" name = "sex" value="Prefer Not To Answer ">Prefer not to answer<br>
+			</div>
+
+				<h3>Device Survey</h3>
+
+			<div class="labels">Which of the following Apple devices do you own?</div>
+			<div class="rightTab"> 
+				<input type="checkbox" name ="iPhone" value="iPhone">iPhone<br>
+				<input type="checkbox" name ="MacBook" value="MacBook">MacBook<br>
+				<input type="checkbox" name ="Apple Watch" value="Apple Watch">Apple Watch<br>
+				<input type="checkbox" name ="iPad" value="iPad">iPad<br>
+			</div>
+
+			<div class="labels">Which is the device that you enjoy using the most? </div>
+			<select name = "favourite" id = "dropdown" required>
+				<option value = "--Please Select--" selected = "selected">--Please Select--</option>
+				<option value = "iPhone">iPhone</option>
+				<option value = "MacBook">MacBook</option>
+				<option value = "Apple Watch">Apple Watch</option>
+				<option value = "iPad">iPad</option>
+			</select>
+			<br>
+
+			<div class="labels">
+				<label>Additional comments about the product</label>
+			 </div>
+			  <div class="rightTab">
+				 <textarea id="textarea" name="Comment" id="comment" cols="30" rows="10" placeholder="Enter comment" required></textarea>
+				</div>
+			
+			<div class ="buttons">
+				<div class = "reset_button"><input type="reset" id="reset" name = "Clear" value="Reset Survey"></div>
+
+				<div class = "submit_button"><button type="submit" id="submit">Submit Survey</button></div>
+			</div>
+			<br>
+
+			<div class="screenshot" alt="Preview of Apple Webpage">
+				<a href = "https://www.apple.com/ca/" target="_blank" rel="noopener noreferrer" >
+				<img src="Apple_Homepage.png" id="screenshot">
+				</a>
+			</div>
+			
+
+		</form>
+	</body>
+</div>
+</html>
