@@ -10,9 +10,10 @@
     /* Coolors */
     --first-color: #071E3D;
     --first-color-dark: #000000;
-    --text-color: #1F4287;
+    --text-color: #EDEDED;
     --first-color-light: #1F4287;
     --first-color-lighten: #fbf9f9;
+    --first-color-description: #D8D8D8;
 
     /* Font and Typography */
 
@@ -72,7 +73,7 @@ body{
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-    background-color: var(--first-color-lighten);
+    background-color: #000000;
     color: var(--text-color);
     line-height: 1.6;
 }
@@ -209,16 +210,16 @@ img{
 
 /* change Background Header */
 .scroll-header{
-    background-color: var(--first-color-lighten);
+    background-color: var(--first-color-dark);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
 }
 
 .scroll-header .nav__logo, .scroll-header .nav__toggle, .scroll-header .nav__link{
-    color: var(--first-color-dark);
+    color: var(--first-color-lighten);
 }
 
 .scroll-header .nav__menu{
-    background-color: var(--first-color-lighten);
+    background-color: var(--first-color-dark);
 }
 
 /* Scroll Top */
@@ -354,12 +355,12 @@ img{
 .about__description span{
     font-size: var(--h2-font-size);
     font-weight: var(--font-semi-bold);
-    color: var(--first-color);
+    color: var(--first-color-lighten);
 }
 
 .about__number{
     font-size: var(--h1-font-size);
-    color: var(--first-color);
+    color: var(--first-color-description);
     display: block;
 }
 
