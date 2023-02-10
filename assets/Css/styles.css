@@ -8,10 +8,10 @@
     --header-height: 3rem;
 
     /* Coolors */
-    --first-color: #3e0e12;
-    --first-color-dark: #2f0a0d;
-    --text-color: #524748;
-    --first-color-light: #7b6f71;
+    --first-color: #071E3D;
+    --first-color-dark: #000000;
+    --text-color: #1F4287;
+    --first-color-light: #1F4287;
     --first-color-lighten: #fbf9f9;
 
     /* Font and Typography */
@@ -467,6 +467,7 @@ img{
 
 .contact__content{
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    font-size: var(--small-font-size);
 }
 
 .contact__box{
@@ -523,7 +524,7 @@ img{
 
 textarea{
     font-family: var(--body-font);
-    font-size: var(--small-font-size);
+    font-size: var(--smaller-font-size);
 }
 
 .contact::placeholder{
