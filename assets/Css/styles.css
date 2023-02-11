@@ -316,6 +316,7 @@ img{
 
 .home__social-icon:hover{
     color: var(--first-color-light);
+    transition: .3s;
     transform: scale(1.5);
 }
 
@@ -359,7 +360,7 @@ img{
     color: var(--first-color-lighten);
     padding: .75rem 1rem;
     border-radius: .25rem;
-    transition: .4s;
+    transition: .3s;
 }
   
 .btn:before, .btn:after {
@@ -370,7 +371,7 @@ img{
 }
   
 .btn:hover {
-    color: var(--first-color-light);
+    /*color: var(--first-color-light);*/
     transition-delay: .3s;
 }
   
@@ -379,7 +380,7 @@ img{
 }
   
 .btn:hover:after {
-    background: var(--first-color-lighten);
+    /*background: var(--first-color-lighten);*/
     transition-delay: .25s;
 }
 
@@ -394,14 +395,14 @@ img{
   border: 1px solid var(--first-color-lighten);
   border-top: 0;
   border-bottom: 0;
-  
+
   border: 0 solid;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
   outline: 1px solid;
   outline-color: rgba(255, 255, 255, .5);
   outline-offset: 0px;
   text-shadow: none;
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all .7ss cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .from-top:after {
@@ -412,7 +413,7 @@ img{
 .from-top:hover:before, .from-top:hover:after {
   height: 100%;
   border: 1px solid;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .2);
   outline-color: rgba(255, 255, 255, 0);
   outline-offset: 15px;
   text-shadow: 1px 1px 2px #427388; 
@@ -529,7 +530,7 @@ img{
 }
 
 .active-portfolio{
-    color: var(--first-color-dark);
+    color: var(--first-color);
     font-weight: var(--font-semi-bold);
 }
 
