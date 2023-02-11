@@ -134,6 +134,7 @@ img{
     gap: 1.5rem;
 }
 
+
 .l-header{
     width: 100%;
     position: fixed;
@@ -353,14 +354,14 @@ img{
 .btn {    
     position: relative; 
     color: var(--inv);
-    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);  
+    transition: all .6s cubic-bezier(0.77, 0, 0.175, 1);  
     cursor: pointer;
     user-select: none;
     display: inline-block;
     color: var(--first-color-lighten);
     padding: .75rem 1rem;
     border-radius: .25rem;
-    transition: .3s;
+    transition: .4s;
 }
   
 .btn:before, .btn:after {
@@ -372,7 +373,7 @@ img{
   
 .btn:hover {
     /*color: var(--first-color-light);*/
-    transition-delay: .3s;
+    transition-delay: .4s;
 }
   
 .btn:hover:before {
@@ -402,7 +403,7 @@ img{
   outline-color: rgba(255, 255, 255, .5);
   outline-offset: 0px;
   text-shadow: none;
-  transition: all .7ss cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all .7s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .from-top:after {
@@ -415,7 +416,7 @@ img{
   border: 1px solid;
   box-shadow: inset 0 0 10px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .2);
   outline-color: rgba(255, 255, 255, 0);
-  outline-offset: 15px;
+  outline-offset: 20px;
   text-shadow: 1px 1px 2px #427388; 
 }
 
@@ -541,9 +542,12 @@ img{
 }
 
 .contact__content{
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin: auto;
+    width: 75%;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, .5fr));
     font-size: var(--small-font-size);
-    color: var(--first-color);
+    color: var(--first-color-description);
 }
 
 .contact__box{
@@ -600,7 +604,7 @@ img{
 
 .contact__description{
     color: var(--first-color-description);
-    text-align: left;
+    text-align: center;
 }
 
 textarea{
