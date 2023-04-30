@@ -535,6 +535,7 @@ img{
 
 .contact__container{
     row-gap: 2.5rem;
+    width: 100%;
 }
 
 .contact__content{
@@ -608,6 +609,32 @@ textarea{
 .contact__button{
     cursor: pointer;
     border: none;
+}
+
+.contact__img {
+    max-width: 100%;
+    height: auto;
+    transition: .4s;
+    width: 100%;
+}
+
+.contact__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact__description {
+    flex: 1;
+    text-align: center;
+}
+
+.contact__description p{
+    margin-bottom: 1rem;
+}
+
+.contact__img-container {
+    flex: 1;
+    text-align: right;
 }
 
 /* FOOTER */
