@@ -345,6 +345,42 @@ img{
     background: none;
 }
 
+/* DOWNLOAD BUTTON */
+
+.btn {    
+    position: relative; 
+    color: var(--inv);
+    transition: all .6s cubic-bezier(0.77, 0, 0.175, 1);  
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    color: var(--first-color-lighten);
+    padding: .75rem 1rem;
+    border-radius: .25rem;
+    transition: .4s;
+}
+  
+.btn:before, .btn:after {
+    content: '';
+    position: absolute; 
+    transition: inherit;
+    z-index: -1;
+}
+  
+.btn:hover {
+    /*color: var(--first-color-light);*/
+    transition-delay: .4s;
+}
+  
+.btn:hover:before {
+    transition-delay: 0s;
+}
+  
+.btn:hover:after {
+    /*background: var(--first-color-lighten);*/
+    transition-delay: .25s;
+}
+
 .from-top:before, .from-top:after {
     left: 0;
     height: 0;
