@@ -720,6 +720,10 @@ textarea{
         margin-right: var(--mb-4);
         margin-bottom: 0;
     }
+    .home__social-icon:hover:after {
+        
+        transition-delay: .25s;
+    }
 
     .home__img img{
         width: 440px;
