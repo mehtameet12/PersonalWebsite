@@ -626,6 +626,10 @@ textarea{
 .contact__description {
     flex: 1;
     text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contact__description p{
