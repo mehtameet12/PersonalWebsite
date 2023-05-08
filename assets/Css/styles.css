@@ -730,7 +730,7 @@ textarea{
 }
 
 .footer__social{
-    margin-bottom: var(--mb-6);
+    margin-bottom: var(--mb-3);
 }
 
 .footer__link{
@@ -747,6 +747,12 @@ textarea{
 .footer__copy{
     font-size: var(--smaller-font-size);
     color: var(--first-color-light);
+}
+
+.footer__scratch{
+    font-size: var(--smaller-font-size);
+    margin: var(--mb-3);
+    color: var(--first-color-lighten);
 }
 
 /* MEDIA QUERIES */
