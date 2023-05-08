@@ -267,7 +267,7 @@ img{
 }
 
 .home__data{
-    border-left: 4px solid var(--first-color-lighten);
+    /* border-left: 4px solid var(--first-color-lighten); */
     color: var(--first-color-lighten);
     padding-left: 1.5rem;
     z-index: var(--z-tooltip);
