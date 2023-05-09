@@ -441,6 +441,55 @@ img{
     border-radius: .5rem;
 }
 
+.about {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+.aboutFullWidth{
+    
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.about__container {
+    padding: 0;
+    margin: 0;
+}
+
+.about__video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+}
+
+.about__video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.about__video-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.75); /* Change the opacity value as per your preference */
+}
+
+
+  
+
 /* QUALIFICATION */
 .qualification__container{
     row-gap: 2.5rem;
