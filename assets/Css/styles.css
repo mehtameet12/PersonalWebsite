@@ -448,14 +448,6 @@ img{
     padding: 0;
     margin: 0;
 }
-.aboutFullWidth{
-    
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-}
 
 .about__container {
     padding: 0;
