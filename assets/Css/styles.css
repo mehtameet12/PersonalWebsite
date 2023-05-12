@@ -325,15 +325,26 @@ img{
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 65%; /* Add this to set the width to 50% of the container */
     height: 100%; /* Add this to set the height to 100% of the container */
+    overflow: hidden; /* Add this to hide the gradient overflow */
+    border-radius: 0 10px 10px 0; /* Add this to match the border radius of the container */
 }
+.home__img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+  }
 
 .home__img img {
-    width: 240px; /* Change this to 100% to make the image fill the container */
+    width: 100%; /* Change this to 100% to make the image fill the container */
     height: auto; /* Add this to set the height to 100% of the container */
     object-fit: cover; /* Add this to fill the container without stretching the image */
     object-position: center right; /* Add this to align the image to the right */
+
 }
 
 
