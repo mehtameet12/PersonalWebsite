@@ -27,8 +27,8 @@ function scrollActive(){
     const scrollY = window.pageYOffset
 
     sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50
+        const sectionHeight = current.offsetHeight 
+        const sectionTop = current.offsetTop - 120
         sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){

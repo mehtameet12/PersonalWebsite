@@ -309,6 +309,7 @@ img{
     margin-bottom: var(--mb-3);
 }
 
+/*
 .home__img{
     position: absolute;
     right: 0;
@@ -318,6 +319,23 @@ img{
 .home__img img{
     width: 240px;
 }
+*/
+
+.home__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 65%; /* Add this to set the width to 50% of the container */
+    height: 100%; /* Add this to set the height to 100% of the container */
+}
+
+.home__img img {
+    width: 240px; /* Change this to 100% to make the image fill the container */
+    height: auto; /* Add this to set the height to 100% of the container */
+    object-fit: cover; /* Add this to fill the container without stretching the image */
+    object-position: center right; /* Add this to align the image to the right */
+}
+
 
 .home__social{
     display: flex;
