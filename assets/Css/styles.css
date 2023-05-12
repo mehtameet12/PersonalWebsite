@@ -248,19 +248,19 @@ img{
     justify-content: center;
     align-items: center;
     padding: .5rem;
-    background: rgba(123, 111, 113, .7);
+    background: #000;
     border-radius: .5rem;
     z-index: var(--z-tooltip);
-    transition: .4s;
+    transition: .3s;
     visibility: hidden;
 }
 
 .scrolltop:hover{
-    background-color: var(--first-color);
+    background-color: var(--first-color-lighten2);
 }
 
-.scrolltop__icon{
-    font-size: 2rem;
+.scroll-top__icon{
+    font-size: 1rem;
     color: var(--first-color-lighten);
 }
 /* Show Scroll Top */
