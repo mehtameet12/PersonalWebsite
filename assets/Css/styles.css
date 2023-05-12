@@ -669,6 +669,24 @@ img{
     row-gap: 2.5rem;
     width: 100%;
 }
+.contact {
+    position: relative;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.contact__backdrop-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 78%;
+    background-color: #000;
+    transform-origin: bottom left;
+    transform: skewY(4.5deg);
+    z-index: -1;
+}
 
 .contact__content{
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -762,6 +780,7 @@ textarea{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: var(--first-color-lighten)
 }
 
 .contact__description p{
@@ -878,13 +897,13 @@ textarea{
 
 .footer__copy{
     font-size: var(--smaller-font-size);
-    color: var(--first-color-light);
+    color: var(--first-color-lighten2);
 }
 
 .footer__scratch{
     font-size: var(--smaller-font-size);
     margin: var(--mb-3);
-    color: var(--first-color-lighten);
+    color: var(--first-color-lighten2);
 }
 
 /* MEDIA QUERIES */
