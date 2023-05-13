@@ -282,6 +282,9 @@ img{
     grid-template-rows: repeat(2, max-content);
     align-content: space-around;
     row-gap: 2rem;
+    display: flex; /* add this line */
+    flex-direction: column; /* add this line */
+    justify-content: center; /* add this line */
 }
 
 .home__data{
@@ -289,6 +292,7 @@ img{
     color: var(--first-color-lighten);
     padding-left: 1.5rem;
     z-index: var(--z-tooltip);
+    text-align: center; /* add this line */
 }
 
 .home__name{
@@ -363,6 +367,23 @@ img{
 .home__social-icon:hover{
     color: var(--first-color-light);
 }
+
+.typewriter::after {
+    content: '|';
+    display: inline-block;
+    animation: blink-caret .75s step-end infinite;
+    margin-left: 4px;
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+  
 
 /* Buttons */
 .button{
