@@ -44,7 +44,7 @@ window.addEventListener('scroll', scrollActive)
 /* Change Background Header */
 function scrollHeader(){
     const header = document.getElementById('header')
-    if(this.scrollY >= 200) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+    if(this.scrollY >= 750) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 
 window.addEventListener('scroll', scrollHeader)
@@ -115,16 +115,18 @@ const typewriter = (txtElement, words, wait = 500) => {
         txtElement.innerHTML = currentWord.substring(0, currentTextIndex + 1);
         currentTextIndex++;
       }
-      setTimeout(type, 100);
+      setTimeout(type, 50);
     };
-    setTimeout(type, 100);
+    setTimeout(type, 50);
   };
   
   document.addEventListener("DOMContentLoaded", () => {
     const professionElement = document.querySelector("#home__profession");
-    const words = ["Web Developer", "Software Engineer", "Mechanical Designer", "Computer Science Student"];
+    const words = ["Mechanical Engineer turned Software Developer", "Web Developer", "Computer Science Student"];
     setTimeout(() => {
         typewriter(professionElement, words);
       }, 1000);
-  });
-  
+});
+
+/* Home Annimation */
+document.querySelector('.home').classList.add('show');
