@@ -515,7 +515,7 @@ img{
     top: 0;
     right: 0;
     width: 100%;
-    height: 86%;
+    height: 100%;
     background-color: #000;
     transform-origin: bottom left;
     transform: skewY(4.5deg);
@@ -545,9 +545,8 @@ img{
   
   .about__description {
     font-size: var(--small-font-size);
-    font-weight: var(--font-semi-bold);
+    font-weight: var(--font-medium);
     color: var(--first-color-lighten);
-  
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -580,30 +579,6 @@ img{
     display: block;
   }
   
-
-/* To be used for video in this section */
-.about__video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100%;
-    z-index: -1;
-}
-.about__video-container video {
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-}
-.about__video-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.5); /* Change the opacity value as per your preference */
-}
 
 /* QUALIFICATION */
 .qualification {
@@ -751,7 +726,7 @@ img{
     top: 0;
     right: 0;
     width: 100%;
-    height: 78%;
+    height: 80%;
     background-color: #000;
     transform-origin: bottom left;
     transform: skewY(4.5deg);
