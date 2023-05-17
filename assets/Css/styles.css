@@ -696,11 +696,11 @@ img{
 }
 
 .portfolio__content:hover{
-    box-shadow: 0 6px 8px rgba(174, 190, 205, .4);
+    box-shadow: 0 5px 15px rgba(174, 190, 205, .4);
 }
 
 .portfolio__content:hover .portfolio__img{
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 .active-portfolio{
