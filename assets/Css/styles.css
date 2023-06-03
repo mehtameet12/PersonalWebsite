@@ -985,10 +985,28 @@ textarea{
     .about__image-container {
         display: none; /* Hide the image container */
     }
-}
+
+    .contact__backdrop-container::after {
+        transform: none;
+        clip-path: none;
+        height: 90%;
+    }
+
+    .contact__img-container {
+        display: none;
+    }
+
     
+
+}
+
 @media screen and (min-width: 577px) {
     .about__backdrop-container::after {
+        transform: skewY(4.5deg); /* Restore the skew transformation for larger screen sizes */
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 1.75vw)); /* Restore the clip-path for larger screen sizes */
+    }
+
+    .contact__backdrop-container::after {
         transform: skewY(4.5deg); /* Restore the skew transformation for larger screen sizes */
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 1.75vw)); /* Restore the clip-path for larger screen sizes */
     }
