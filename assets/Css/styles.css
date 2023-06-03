@@ -969,6 +969,32 @@ textarea{
     }
 }
 
+@media screen and (max-width: 576px) {
+    .about__backdrop-container::after {
+        transform: none; /* Remove the skew transformation */
+        clip-path: none; /* Remove the clip-path */
+    }
+    .about__description {
+        width: 100%;
+        justify-content: center; /* Center the content horizontally */
+        text-align: center; /* Center the text within the description */
+    }
+    .about__container {
+        grid-template-columns: 100%; /* Use a single column layout with full width */
+    }
+    .about__image-container {
+        display: none; /* Hide the image container */
+    }
+}
+    
+@media screen and (min-width: 577px) {
+    .about__backdrop-container::after {
+        transform: skewY(4.5deg); /* Restore the skew transformation for larger screen sizes */
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 1.75vw)); /* Restore the clip-path for larger screen sizes */
+    }
+}
+      
+
 @media screen and (min-width: 768px){
     body{
         margin: 0;
