@@ -44,7 +44,7 @@ window.addEventListener('scroll', scrollActive)
 /* Change Background Header */
 function scrollHeader(){
     const header = document.getElementById('header')
-    const scrollThreshold = window.innerWidth < 576 ? 1705 : 750;
+    const scrollThreshold = window.innerWidth < 576 ? 1267 : 750;
     //if(this.scrollY >= 750) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 
     if (this.scrollY >= scrollThreshold) {
